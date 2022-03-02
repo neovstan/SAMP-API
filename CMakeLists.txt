@@ -17,4 +17,4 @@ target_include_directories(sampapi
   PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
-set_property(TARGET sampapi PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+set_property(TARGET sampapi PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:DebugDLL>")
