@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R1
 
-SAMPAPI_VAR CNetGame*& RefNetGame() {
+SAMPAPI_VAR CNetGame*& RefNetGame(VersionTag) {
     return *(CNetGame**)GetAddress(0x21A0F8);
 }
 

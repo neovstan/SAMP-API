@@ -74,3 +74,23 @@ inline unsigned long GetAddress(signed long offset) {
 }
 
 SAMPAPI_END_COMMON
+
+
+SAMPAPI_BEGIN_V037R1
+
+struct VersionTag {};
+
+SAMPAPI_END
+
+SAMPAPI_BEGIN_V037R3_1
+
+struct VersionTag {};
+
+SAMPAPI_END
+
+SAMPAPI_NAMESPACE_BEGIN(versions)
+
+inline constexpr auto&& v037r1 = v037r1::VersionTag{};
+inline constexpr auto&& v037r3 = v037r3::VersionTag{};
+
+SAMPAPI_END

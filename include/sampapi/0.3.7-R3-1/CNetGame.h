@@ -168,6 +168,6 @@ public:
     __int64             GetCounter();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CNetGame*& RefNetGame();
+SAMPAPI_EXPORT SAMPAPI_VAR CNetGame*& RefNetGame(VersionTag = {});
 
 SAMPAPI_END_PACKED
