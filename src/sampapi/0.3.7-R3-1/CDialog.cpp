@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R3_1
 
-SAMPAPI_VAR CDialog*& RefDialog() {
+SAMPAPI_VAR CDialog*& RefDialog(VersionTag) {
     return *(CDialog**)GetAddress(0x26E898);
 }
 
