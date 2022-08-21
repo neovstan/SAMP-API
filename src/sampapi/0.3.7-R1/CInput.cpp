@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R1
 
-SAMPAPI_VAR CInput*& RefInputBox() {
+SAMPAPI_VAR CInput*& RefInputBox(VersionTag) {
     return *(CInput**)GetAddress(0x21A0E8);
 }
 

@@ -52,6 +52,6 @@ public:
     void Draw();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CDialog*& RefDialog();
+SAMPAPI_EXPORT SAMPAPI_VAR CDialog*& RefDialog(VersionTag = {});
 
 SAMPAPI_END_PACKED

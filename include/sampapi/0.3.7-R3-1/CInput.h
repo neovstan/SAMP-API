@@ -54,6 +54,6 @@ public:
     void    ProcessInput();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CInput*& RefInputBox();
+SAMPAPI_EXPORT SAMPAPI_VAR CInput*& RefInputBox(VersionTag = {});
 
 SAMPAPI_END_PACKED
