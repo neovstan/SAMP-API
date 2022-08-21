@@ -139,6 +139,6 @@ public:
     void              ProcessFrameLimiter();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CGame*& RefGame();
+SAMPAPI_EXPORT SAMPAPI_VAR CGame*& RefGame(VersionTag={});
 
 SAMPAPI_END_PACKED

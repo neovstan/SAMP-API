@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R1
 
-SAMPAPI_VAR CGame*& RefGame() {
+SAMPAPI_VAR CGame*& RefGame(VersionTag) {
     return *(CGame**)GetAddress(0x21A10C);
 }
 

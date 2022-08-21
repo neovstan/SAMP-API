@@ -19,7 +19,7 @@ SAMPAPI_VAR bool* CGame::ArrayUsedPlayerSlots() {
     return (bool*)GetAddress(0x150090);
 }
 
-SAMPAPI_VAR CGame*& RefGame() {
+SAMPAPI_VAR CGame*& RefGame(VersionTag) {
     return *(CGame**)GetAddress(0x26E8F4);
 }
 
