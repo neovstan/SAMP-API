@@ -63,9 +63,9 @@ public:
         CVehiclePool*  m_pVehicle;
         CPickupPool*   m_pPickup;
         CObjectPool*   m_pObject;
-        CGangZonePool* m_pGangZone;
+        CGangZonePool* m_pGangzone;
         CLabelPool*    m_pLabel;
-        CTextDrawPool* m_pTextDraw;
+        CTextDrawPool* m_pTextdraw;
     };
 
     struct SAMPAPI_EXPORT Settings {

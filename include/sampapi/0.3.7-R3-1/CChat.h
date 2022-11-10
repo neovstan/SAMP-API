@@ -100,6 +100,6 @@ public:
     void OnResetDevice();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CChat*& RefChat();
+SAMPAPI_EXPORT SAMPAPI_VAR CChat*& RefChat(VersionTag = {});
 
 SAMPAPI_END_PACKED

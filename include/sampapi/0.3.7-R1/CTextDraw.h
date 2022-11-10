@@ -37,7 +37,7 @@ public:
         bool           m_bOutline;
         D3DCOLOR       m_backgroundColor;
         unsigned char  m_nStyle;
-        unsigned char  unknown;
+        unsigned char  is_selectable;
         float          m_fX;
         float          m_fY;
         unsigned short m_nModel;
@@ -69,7 +69,7 @@ public:
         unsigned long  field_99B;
         unsigned long  field_99F;
         unsigned long  m_nIndex;
-        unsigned char  field_9A7;
+        unsigned char  is_selectable;
         unsigned short m_nModel;
         CVector        m_rotation;
         float          m_fZoom;
@@ -95,5 +95,7 @@ public:
     void SetText(const char* szText);
     void Draw();
 };
+
+CTextDraw::Transmit get_transmit_type(VersionTag = {});
 
 SAMPAPI_END_PACKED

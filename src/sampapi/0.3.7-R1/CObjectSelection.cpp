@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R1
 
-SAMPAPI_VAR CObjectSelection*& RefObjectSelection() {
+SAMPAPI_VAR CObjectSelection*& RefObjectSelection(VersionTag) {
     return *(CObjectSelection**)GetAddress(0x21A0C8);
 }
 

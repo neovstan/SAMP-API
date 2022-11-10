@@ -24,7 +24,7 @@ public:
     // void **m_lpVtbl = 0xED6E8;
     CVehicle*          m_pTrailer;
     ::CVehicle*        m_pGameVehicle;
-    char               pad_50[8];
+    BOOL	       m_bEngineOn;
     BOOL               m_bIsInvulnerable;
     BOOL               m_bIsLightsOn;
     BOOL               m_bIsLocked;

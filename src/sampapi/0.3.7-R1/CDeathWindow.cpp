@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R1
 
-SAMPAPI_VAR CDeathWindow*& RefDeathWindow() {
+SAMPAPI_VAR CDeathWindow*& RefDeathWindow(VersionTag) {
     return *(CDeathWindow**)GetAddress(0x21A0EC);
 }
 

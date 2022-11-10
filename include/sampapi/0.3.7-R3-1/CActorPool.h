@@ -46,4 +46,6 @@ public:
     BOOL    Create(ActorInfo* pInfo);
 };
 
+ActorInfo get_actor_info_type(VersionTag);
+
 SAMPAPI_END_PACKED

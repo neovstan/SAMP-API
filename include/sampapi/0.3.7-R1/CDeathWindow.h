@@ -54,6 +54,6 @@ public:
     void        AddMessage(const char* szKiller, const char* szVictim, D3DCOLOR killerColor, D3DCOLOR victimColor, char nWeapon);
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CDeathWindow*& RefDeathWindow();
+SAMPAPI_EXPORT SAMPAPI_VAR CDeathWindow*& RefDeathWindow(VersionTag = {});
 
 SAMPAPI_END_PACKED

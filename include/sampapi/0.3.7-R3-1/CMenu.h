@@ -55,4 +55,6 @@ public:
     void  Show();
 };
 
+CMenu::Interaction get_interaction_type(VersionTag);
+
 SAMPAPI_END_PACKED

@@ -46,4 +46,6 @@ public:
     ID      Find(::CPed* pPed);
 };
 
+ActorInfo get_actor_info_type(VersionTag);
+
 SAMPAPI_END_PACKED

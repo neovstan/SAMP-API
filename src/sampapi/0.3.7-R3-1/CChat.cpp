@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R3_1
 
-SAMPAPI_VAR CChat*& RefChat() {
+SAMPAPI_VAR CChat*& RefChat(VersionTag) {
     return *(CChat**)GetAddress(0x26E8C8);
 }
 

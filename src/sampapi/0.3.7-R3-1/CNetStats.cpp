@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R3_1
 
-SAMPAPI_VAR CNetStats*& RefNetStats() {
+SAMPAPI_VAR CNetStats*& RefNetStats(VersionTag) {
     return *(CNetStats**)GetAddress(0x26E8B4);
 }
 

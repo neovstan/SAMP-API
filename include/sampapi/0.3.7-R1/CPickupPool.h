@@ -48,4 +48,6 @@ public:
     void Process();
 };
 
+Pickup get_pickup_type(VersionTag);
+
 SAMPAPI_END_PACKED

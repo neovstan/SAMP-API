@@ -11,7 +11,7 @@
 
 SAMPAPI_BEGIN_V037R3_1
 
-SAMPAPI_VAR CTextDrawSelection*& RefTextDrawSelection() {
+SAMPAPI_VAR CTextDrawSelection*& RefTextdrawSelection(VersionTag) {
     return *(CTextDrawSelection**)GetAddress(0x26E8B0);
 }
 

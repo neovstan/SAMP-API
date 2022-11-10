@@ -39,6 +39,6 @@ public:
     BOOL MsgProc(int uMsg, int wParam, int lParam);
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CTextDrawSelection*& RefTextdrawSelection();
+SAMPAPI_EXPORT SAMPAPI_VAR CTextDrawSelection*& RefTextdrawSelection(VersionTag = {});
 
 SAMPAPI_END_PACKED

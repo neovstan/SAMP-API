@@ -27,6 +27,6 @@ public:
     void Draw();
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CNetStats*& RefNetStats();
+SAMPAPI_EXPORT SAMPAPI_VAR CNetStats*& RefNetStats(VersionTag = {});
 
 SAMPAPI_END_PACKED

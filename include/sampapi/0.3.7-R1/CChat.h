@@ -102,6 +102,6 @@ public:
     void Print(D3DCOLOR dwColor, const char* pFormat, ...);
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CChat*& RefChat();
+SAMPAPI_EXPORT SAMPAPI_VAR CChat*& RefChat(VersionTag = {});
 
 SAMPAPI_END_PACKED

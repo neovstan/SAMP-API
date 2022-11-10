@@ -37,7 +37,7 @@ public:
         bool           m_bOutline;
         D3DCOLOR       m_backgroundColor;
         unsigned char  m_nStyle;
-        unsigned char  unknown;
+        unsigned char  is_selectable;
         float          m_fX;
         float          m_fY;
         unsigned short m_nModel;
@@ -69,20 +69,20 @@ public:
         unsigned long  field_99B;
         unsigned long  field_99F;
         unsigned long  m_nIndex;
-        unsigned char  field_9A7;
+        unsigned char  is_selectable;
         unsigned short m_nModel;
         CVector        m_rotation;
         float          m_fZoom;
         unsigned short m_aColor[2];
         unsigned char  field_9BE;
-        unsigned char  field_9BF;
-        unsigned char  field_9C0;
-        unsigned long  field_9C1;
-        unsigned long  field_9C5;
-        unsigned long  field_9C9;
-        unsigned long  field_9CD;
-        unsigned char  field_9D1;
-        unsigned long  field_9D2;
+        unsigned char  drawn_this_frame;
+        unsigned char  text_contains_keys;
+        unsigned long  computed_left;
+        unsigned long  computed_top;
+        unsigned long  computed_right;
+        unsigned long  computed_bottom;
+        unsigned char  is_selected;
+        unsigned long  color_if_selected;
     };
 
     char m_szText[801];
@@ -95,5 +95,7 @@ public:
     void SetText(const char* szText);
     void Draw();
 };
+
+CTextDraw::Transmit get_transmit_type(VersionTag = {});
 
 SAMPAPI_END_PACKED

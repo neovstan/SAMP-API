@@ -28,6 +28,6 @@ public:
     BOOL MsgProc(int uMsg, int wParam, int lParam);
 };
 
-SAMPAPI_EXPORT SAMPAPI_VAR CObjectSelection*& RefObjectSelection();
+SAMPAPI_EXPORT SAMPAPI_VAR CObjectSelection*& RefObjectSelection(VersionTag = {});
 
 SAMPAPI_END_PACKED

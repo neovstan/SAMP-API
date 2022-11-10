@@ -13,7 +13,7 @@ SAMPAPI_BEGIN_V037R1
 #include <stdarg.h>
 #include <stdio.h>
 
-SAMPAPI_VAR CChat*& RefChat() {
+SAMPAPI_VAR CChat*& RefChat(VersionTag) {
     return *(CChat**)GetAddress(0x21A0E4);
 }
 
