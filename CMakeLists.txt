@@ -25,5 +25,3 @@ set_target_properties(sampapi
     CXX_STANDARD_REQUIRED ON
     CXX_EXTENSIONS OFF
 )
-
-set_property(TARGET sampapi PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:DebugDLL>")
